@@ -3,7 +3,7 @@ name: Lab 02 Tests
 on:
   push:
     paths:
-      - 'c:/Users/USER/Documents/computer programming/lab-2.fprg'
+      - 'labs/lab02/lab-2.fprg'
 
 jobs:
   test:
