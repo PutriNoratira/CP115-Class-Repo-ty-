@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-5"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:43:27 PM"/>
+        <attribute name="created" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6Mzg6MDIgUE07MjA1Nw=="/>
+        <attribute name="edited" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6NDM6MjcgUE07MTsyMTY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numCalories" type="Real" array="False" size=""/>
+            <declare name="numBiscuit" type="Integer" array="False" size=""/>
+            <declare name="totalCalories" type="Real" array="False" size=""/>
+            <output expression="&quot;Please enter the number of cookies u ate&quot;" newline="True"/>
+            <input variable="numBiscuit"/>
+            <assign variable="numCalories" expression="300/10"/>
+            <assign variable="totalCalories" expression="numBiscuit * numCalories"/>
+            <output expression="&quot;Total calories are:&quot;&amp;totalCalories" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-4"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:37:44 PM"/>
+        <attribute name="created" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6MzQ6MjEgUE07MjA1NA=="/>
+        <attribute name="edited" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6Mzc6NDQgUE07MTsyMTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fax" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter number of fax:&quot;" newline="True"/>
+            <input variable="fax"/>
+            <declare name="totalPrice" type="Real" array="False" size=""/>
+            <assign variable="totalPrice" expression="(fax*0.20)+3.00"/>
+            <output expression="&quot;Total price is(RM):&quot; &amp; totalPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

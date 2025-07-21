@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-6"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:57:33 PM"/>
+        <attribute name="created" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6NDM6MzIgUE07MjA1Ng=="/>
+        <attribute name="edited" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6NTc6MzMgUE07MTsyMTcw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="houseLength" type="Real" array="False" size=""/>
+            <declare name="houseWidth" type="Real" array="False" size=""/>
+            <declare name="yardLength" type="Real" array="False" size=""/>
+            <declare name="yardWidth" type="Real" array="False" size=""/>
+            <declare name="houseBuildLength" type="Real" array="False" size=""/>
+            <declare name="houseBuildWidth" type="Real" array="False" size=""/>
+            <declare name="areaHouseArea" type="Real" array="False" size=""/>
+            <declare name="areaYard" type="Real" array="False" size=""/>
+            <declare name="areaBuiltHouse" type="Real" array="False" size=""/>
+            <output expression="&quot;Please insert house length(m)&quot;" newline="True"/>
+            <input variable="houseLength"/>
+            <output expression="&quot;Please insert house width(m)&quot;" newline="True"/>
+            <input variable="houseWidth"/>
+            <output expression="&quot;Please insert yard length(m)&quot;" newline="True"/>
+            <input variable="yardLength"/>
+            <output expression="&quot;Please insert yard width(m)&quot;" newline="True"/>
+            <input variable="yardWidth"/>
+            <output expression="&quot;Please insert built house length(m):&quot;" newline="True"/>
+            <input variable="houseBuildLength"/>
+            <output expression="&quot;Please insert built house width(m):&quot;" newline="True"/>
+            <input variable="houseBuildWidth"/>
+            <assign variable="areaHouseArea" expression="houseLength * houseWidth"/>
+            <assign variable="areaYard" expression="yardLength * yardWidth"/>
+            <assign variable="areaBuiltHouse" expression="houseBuildLength * houseBuildWidth"/>
+            <declare name="diesel" type="Real" array="False" size=""/>
+            <assign variable="diesel" expression="2.00"/>
+            <declare name="areaMowing" type="Real" array="False" size=""/>
+            <assign variable="areaMowing" expression="areaYard-areaBuiltHouse"/>
+            <declare name="totalCost" type="Real" array="False" size=""/>
+            <assign variable="totalCost" expression="areaMowing*diesel"/>
+            <output expression="&quot;Total wage of mowing the yard is(RM):&quot;&amp;totalCost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

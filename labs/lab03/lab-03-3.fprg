@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-3"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-07-21 12:34:11 PM"/>
+        <attribute name="created" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6MTA6MjEgUE07MjA0OA=="/>
+        <attribute name="edited" value="VVNFUjtUSVJBLTg2OzIwMjUtMDctMjE7MTI6MzQ6MTEgUE07MTsyMTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sizeKilobytes" type="Real" array="False" size=""/>
+            <declare name="sizeMegabytes" type="Real" array="False" size=""/>
+            <declare name="sizeGigabytes" type="Real" array="False" size=""/>
+            <declare name="sizeTerabytes" type="Real" array="False" size=""/>
+            <declare name="sizePetabytes" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the value in Kilobytes&quot;" newline="True"/>
+            <input variable="sizeKilobytes"/>
+            <assign variable="sizeMegabytes" expression="sizeKilobytes / 1024"/>
+            <assign variable="sizeGigabytes" expression="sizeMegabytes / 1024"/>
+            <assign variable="sizeTerabytes" expression="sizeGigabytes / 1024"/>
+            <assign variable="sizePetabytes" expression="sizeTerabytes / 1024"/>
+            <output expression="&quot;Megabyte(MB):&quot;&amp;sizeMegabytes" newline="True"/>
+            <output expression="&quot;Gigabyte(GB):&quot;&amp;sizeGigabytes" newline="True"/>
+            <output expression="&quot;Terabyte(TB):&quot;&amp;sizeTerabytes" newline="True"/>
+            <output expression="&quot;Petabyte(PB):&quot;&amp;sizePetabytes" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
