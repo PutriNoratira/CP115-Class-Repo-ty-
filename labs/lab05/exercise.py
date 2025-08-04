@@ -36,6 +36,7 @@ import datetime
 circle_area = math.pi * (5 ** 2)
 random_number = random.randint(1, 100)
 current_date = datetime.date.today()
+print(circle_area)
 
 # Import specific functions from modules
 from math import sqrt, pow, sin, cos
