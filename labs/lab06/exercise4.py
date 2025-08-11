@@ -9,5 +9,5 @@ quantity_item = (int(input("How much coffee you bought:")))
 total_price = price_item * quantity_item
 
 # Creating a formatted table
-customer_receipt = "==========RECEIPT==========\n\nItem\tPrice\tQty\tTotal\nCoffee\t$3.50\t2\t$7.00\n\n==========================="
+customer_receipt = "==========RECEIPT==========\n\nItem\tPrice\tQuantity\tTotal\nCoffee\t$3.50\t2\t\t$7.00\n\n==========================="
 print(customer_receipt)
