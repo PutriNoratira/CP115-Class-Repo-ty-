@@ -6,4 +6,5 @@ hoursTime = float(minutesTime // 60)
 excessTime = float(minutesTime % 60)
 
 # Displaying the output
+print ("Original minutes are " + str(minutesTime))
 print(str(hoursTime) + " Hours " + str(excessTime) + " Minutes ")
