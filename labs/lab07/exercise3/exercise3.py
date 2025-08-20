@@ -1,0 +1,15 @@
+import school_data
+
+print ("===STUDENT REPORT===")
+print (f"Student Name: {school_data.student_name}")
+print (f"Student ID: {school_data.student_id}")
+print (f"Student Age: {school_data.student_age}")
+print (f"Course Code: {school_data.course_code}")
+print (f"Course Name: {school_data.course_name}")
+print (f"Score 1: {school_data.score_1}")
+print (f"Score 2: {school_data.score_2}")
+print (f"Total score: {school_data.total_score}")
+print (f"Name in upperspace: {school_data.upper_name}")
+print (f"Name in lowerspace: {school_data.lower_name}")
+print (f"Name length: {school_data.length_name}")
+print (f"Score square root: {school_data.sqrt_score}")

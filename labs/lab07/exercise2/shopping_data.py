@@ -1,8 +1,8 @@
 #Product name 
-product_1 = "milk"
-product_2 = "bread"
-product_3 = "ice_cream"
-product_4 = "chocolate"
+product_1 = "Milk"
+product_2 = "Bread"
+product_3 = "Ice cream"
+product_4 = "Chocolate"
 
 #Product price
 milk = 4.50
