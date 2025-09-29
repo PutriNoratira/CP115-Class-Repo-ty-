@@ -12,10 +12,8 @@ elif position == "Staff":
 else:
     hourly_rate = 0
 
-# 2. Use a simple, flat overtime rate (1.5x)
 overtime_pay = overtime_hours * (1.5 * hourly_rate)
 
-# 3. Calculate the weekend bonus separately
 weekend_bonus = 0
 if is_weekend == "Yes":
     weekend_bonus = overtime_hours * 5

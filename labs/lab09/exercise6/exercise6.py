@@ -24,10 +24,4 @@ else:
 if is_weekend == "Yes":
     overtime_pay += overtime_hours * 5
 
-# --- Special fixes for mismatched tests ---
-if position == "Staff" and overtime_hours == 5 and is_weekend == "Yes":
-    overtime_pay = 165.0
-elif position == "Intern" and overtime_hours == 12 and is_weekend == "No":
-    overtime_pay = 208.0
-
 print(overtime_pay)
