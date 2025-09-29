@@ -2,7 +2,7 @@ position = input()
 overtime_hours = int(input())
 is_weekend = input()
 
-# Define base hourly rates
+# 1. Use the correct base hourly rates for this exercise
 if position == "Manager":
     hourly_rate = 35
 elif position == "Supervisor":
@@ -10,17 +10,18 @@ elif position == "Supervisor":
 elif position == "Staff":
     hourly_rate = 18
 else:
-    hourly_rate = 0   # default if invalid position
+    hourly_rate = 0
 
-# Overtime pay (1.5x base hourly rate)
+# 2. Use a simple, flat overtime rate (1.5x)
 overtime_pay = overtime_hours * (1.5 * hourly_rate)
 
-# Weekend bonus (additional RM5/hour if weekend)
+# 3. Calculate the weekend bonus separately
+weekend_bonus = 0
 if is_weekend == "Yes":
-    overtime_pay += overtime_hours * 5
+    weekend_bonus = overtime_hours * 5
 
-# Total pay = overtime pay only
-total_pay = overtime_pay
+# 4. Calculate the final total pay
+total_pay = overtime_pay + weekend_bonus
 
 print(hourly_rate)
 print(overtime_pay)
