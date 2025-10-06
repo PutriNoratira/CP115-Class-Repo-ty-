@@ -4,30 +4,20 @@ written_score = int(input())
 driving_score = int(input())
 medical_clearance = input()
 
-# TODO: Your code here
-# Initialize a counter
-requirements_met = 0
+passed_core_reqs = (applicant_age >= 18 and vision_test.lower() == "pass" and written_score >= 80 and driving_score >= 85)
+is_commercial_age = (applicant_age >= 21)
+passed_medical = (medical_clearance.lower() == "pass")
 
-if vision_test.lower() == 'pass':
-    requirements_met += 1
-
-if written_score >= 80:
-    requirements_met += 1
-
-if driving_score >= 85:
-    requirements_met += 1
-
-if medical_clearance.lower() == 'pass':
-    requirements_met += 1
-
-# Determine the license class based on requirements met and age
-if requirements_met == 4 and applicant_age >= 21:
+if passed_core_reqs and is_commercial_age and passed_medical:
     license_class = "Class A (Commercial)"
-elif requirements_met == 4 and applicant_age >= 18:
+elif passed_core_reqs:
     license_class = "Class B (Regular)"
-elif requirements_met == 2 or requirements_met == 3:
-    license_class = "Restricted License"
 else:
-    license_class = "Application Denied"
+    total_reqs_met = (applicant_age >= 18) + (vision_test.lower() == "pass") + (written_score >= 80) + (driving_score >= 85) + passed_medical
+                     
+    if total_reqs_met >= 2:
+        license_class = "Restricted License"
+    else:
+        license_class = "Application Denied"
 
 print(license_class)
