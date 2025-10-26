@@ -3,5 +3,6 @@
         "."
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.defaultInterpreterPath": "C:\\Users\\USER\\Documents\\computer programming\\classrepo\\CP115-Class-Repo-ty-\\cp115_env\\Scripts\\python.exe"
 }
