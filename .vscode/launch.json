@@ -12,11 +12,13 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "Python Debugger: Current File",
-            "type": "debugpy",
+            "name": "Run Pytest (All Tests)",
+            "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
+            "module": "pytest",
+            "args": ["."],
+            "console": "integratedTerminal",
+            "justMyCode": false
         }
     ]
 }
